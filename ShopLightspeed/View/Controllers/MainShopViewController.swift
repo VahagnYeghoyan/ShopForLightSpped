@@ -91,11 +91,11 @@ class MainShopViewController: UIViewController {
     }
     
     private func isReachedTheEnd() -> Bool {
-        let contentHeight = self.mainTableView.contentSize.height
-        let tableViewHeight = self.mainTableView.bounds.size.height
-        let offsetY = self.mainTableView.contentOffset.y
+        let contentHeight = mainTableView.contentSize.height
+        let tableViewHeight = mainTableView.bounds.size.height
+        let offsetY = mainTableView.contentOffset.y
         
-        return (offsetY + tableViewHeight + 50) > contentHeight && self.viewModel.productsIsLoadingAllowed
+        return (offsetY + tableViewHeight + 50) > contentHeight && viewModel.productsIsLoadingAllowed
     }
 }
 
@@ -112,14 +112,14 @@ extension MainShopViewController {
             .bind(to: mainTableView.rx.items) { [unowned self] (tableView, row, item) in
                 let indexPath = IndexPath(item: row, section: 0)
                 return self.makeCell(with: item, from: tableView, indexPath: indexPath)
-            }.disposed(by: self.viewModel.disposeBag)
+            }.disposed(by: viewModel.disposeBag)
     }
     
     private func bindCellSelection() {
         mainTableView.rx.itemSelected.subscribe(
             onNext: { indexPath in
                 print("Tapped on \(indexPath.row)")
-            }).disposed(by: self.viewModel.disposeBag)
+            }).disposed(by: viewModel.disposeBag)
     }
     
     private func makeCell(with element: ProductCellType, from collectionView: UITableView, indexPath: IndexPath) -> UITableViewCell {

@@ -39,10 +39,6 @@ class MainProductTableViewCell: UITableViewCell {
     
     
     // MARK: - LifeCycle Methods
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override func prepareForReuse() {
         super.prepareForReuse()
         
@@ -90,7 +86,7 @@ struct ProductCellViewModel {
     let product: ProductModel
     
     init(productModel: ProductModel) {
-        self.product = productModel
+        product = productModel
     }
 }
 
