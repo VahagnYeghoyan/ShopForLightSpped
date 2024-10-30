@@ -55,7 +55,11 @@ class MainProductTableViewCell: UITableViewCell {
     private func bindViewModel() {
         guard let viewModel else { return }
         
-        configure(with: viewModel.product.images.first)
+        configureImage(with: viewModel.product.images.first)
+        setContent(with: viewModel)
+    }
+    
+    private func setContent(with viewModel: ProductCellViewModel) {
         
         idLabel.text = "Id - \(viewModel.product.id)"
         priceLabel.text = "Price - \(viewModel.product.price)"
@@ -64,7 +68,7 @@ class MainProductTableViewCell: UITableViewCell {
         ratingLabel.text = "Rating: \(viewModel.product.rating)"
     }
     
-    func configure(with url: String?) {
+    func configureImage(with url: String?) {
         guard let url, let urlChecked = URL(string: url) else { return }
         mainLoadingIndicator.startAnimating()
         

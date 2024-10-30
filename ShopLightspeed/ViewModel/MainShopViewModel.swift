@@ -13,19 +13,24 @@ import RxDataSources
 class MainShopViewModel {
     
     
+    // Cells
     var productCells: Observable<[ProductCellType]> {
         return localProductCells.asObservable()
     }
     let localProductCells = BehaviorRelay<[ProductCellType]>(value: [])
     
+    // Loading
     var loadInProgress: BehaviorRelay<Bool> = BehaviorRelay(value: false)
     var forceUpdateFinished = PublishSubject<Void>()
+    
+    // Request From View
     var forceUpdateRequested = PublishSubject<Void>()
     var needLoadMoreContent = PublishSubject<Void>()
+    
+    // Product Properties
     var productsIsLast = false
     var productsIsLoadingAllowed = true
     let productsLimit = 20
-    
     var productsOffset: Int {
         guard let firstItem = localProductCells.value.first else { return 0 }
         if case ProductCellType.normal(cellViewModel: _) = firstItem  {
@@ -35,7 +40,10 @@ class MainShopViewModel {
         }
     }
     
+    // Managers
     let requestManager: RequestManager
+    
+    // RX
     let disposeBag = DisposeBag()
     
     
