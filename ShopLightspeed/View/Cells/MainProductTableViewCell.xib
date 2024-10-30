@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MainProductTableViewCell" rowHeight="231" id="KGk-i7-Jjw" customClass="MainProductTableViewCell" customModule="ShopLightspeed" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="540" height="231"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="540" height="231"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="DVD-wn-pOu">
+                        <rect key="frame" x="15" y="34.666666666666657" width="162" height="162"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="DVD-wn-pOu" secondAttribute="height" id="TEd-vC-jAD"/>
+                        </constraints>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Foa-mK-K7W">
+                        <rect key="frame" x="177" y="5" width="363" height="221"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dyt-A5-uMw">
+                                <rect key="frame" x="0.0" y="0.0" width="363" height="14.333333333333334"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrP-pZ-Zlc">
+                                <rect key="frame" x="0.0" y="24.333333333333329" width="363" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b4D-am-Toi">
+                                <rect key="frame" x="0.0" y="51.333333333333336" width="363" height="17.000000000000007"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRF-w0-AZR">
+                                <rect key="frame" x="0.0" y="78.333333333333329" width="363" height="17"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NIx-al-l0y">
+                                <rect key="frame" x="0.0" y="105.33333333333333" width="363" height="12"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0b-XW-0Q5">
+                                <rect key="frame" x="0.0" y="127.33333333333334" width="363" height="93.666666666666657"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                    </stackView>
+                    <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="VZf-5F-RHq">
+                        <rect key="frame" x="86" y="105.66666666666667" width="20" height="20"/>
+                    </activityIndicatorView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="Foa-mK-K7W" secondAttribute="trailing" id="0NP-Am-2zO"/>
+                    <constraint firstItem="DVD-wn-pOu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="5jq-Oq-FaS"/>
+                    <constraint firstItem="DVD-wn-pOu" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.3" id="9sL-y1-Gpm"/>
+                    <constraint firstItem="DVD-wn-pOu" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="9sv-oA-UBb"/>
+                    <constraint firstItem="VZf-5F-RHq" firstAttribute="centerY" secondItem="DVD-wn-pOu" secondAttribute="centerY" id="Hqt-VN-OBb"/>
+                    <constraint firstAttribute="bottom" secondItem="Foa-mK-K7W" secondAttribute="bottom" constant="5" id="MAK-Rl-y3O"/>
+                    <constraint firstItem="VZf-5F-RHq" firstAttribute="centerX" secondItem="DVD-wn-pOu" secondAttribute="centerX" id="ZCe-1w-rLX"/>
+                    <constraint firstItem="Foa-mK-K7W" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="aZD-Di-Mvf"/>
+                    <constraint firstItem="Foa-mK-K7W" firstAttribute="leading" secondItem="DVD-wn-pOu" secondAttribute="trailing" id="rYS-HK-J2I"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descritpionLabel" destination="NRF-w0-AZR" id="Vds-u2-aeb"/>
+                <outlet property="idLabel" destination="Dyt-A5-uMw" id="Fxg-Sp-gxu"/>
+                <outlet property="mainImageView" destination="DVD-wn-pOu" id="wBI-77-nt6"/>
+                <outlet property="mainLoadingIndicator" destination="VZf-5F-RHq" id="s9S-V9-gzy"/>
+                <outlet property="priceLabel" destination="b4D-am-Toi" id="sAE-ME-deM"/>
+                <outlet property="ratingLabel" destination="NIx-al-l0y" id="R2e-2S-QdP"/>
+                <outlet property="titleLabel" destination="DrP-pZ-Zlc" id="1Cf-8e-hih"/>
+            </connections>
+            <point key="canvasLocation" x="178.62595419847327" y="85.563380281690144"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
